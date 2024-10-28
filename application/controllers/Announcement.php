@@ -33,8 +33,6 @@ class Announcement extends CI_Controller
                 'tanggal' => $this->input->post('tanggal'), 
                 'date_created' => time()
             ]);
-
-            // Simpand data event dalam sesi
             $announ_data = [
                 'judul' => $this->input->post('judul'),
                 'deskripsi' => $this->input->post('deskripsi'),
@@ -43,7 +41,6 @@ class Announcement extends CI_Controller
             ];
 
             $this->session->set_userdata('announ_data', $announ_data);
-
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Pengumuman Telah ditambahkan!</div>');
             redirect('announcement');
         }

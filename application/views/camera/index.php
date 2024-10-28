@@ -53,7 +53,7 @@
                 <div>
                     <div>
                         <b>Kamera Outdoor Utara</b><br>
-                        <iframe id="youtubeFrame" width="100%" height="400" src="https://www.youtube.com/embed/Lfl2Nj_QRXU?autoplay=1&controls=0&showinfo=0&mute=1" frameborder="3" allowfullscreen></iframe>
+                        <iframe id="youtubeFrame" width="100%" height="400" src="https://cctv.balitower.co.id/Menteng-025-700503_3/embed.html" frameborder="3" allowfullscreen></iframe>
                     </div>
                     <div>
                         <b>Kamera Outdoor Serambi Masjid</b><br>
@@ -70,7 +70,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title fs-5" id="newUtaraModalLabel">Tambahkan Pengunjung</h4>
+                            <h4 class="modal-title fs-5" id="newUtaraModalLabel">Panic Button</h4>
                             <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
                                 &times;
                             </button>

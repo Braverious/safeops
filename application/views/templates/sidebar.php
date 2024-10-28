@@ -14,17 +14,11 @@
             ?>
         </div>
     </a>
-
-
-
     <!-- Divider -->
     <hr class="sidebar-divider">
-
     <!-- QUERY MENU -->
     <?php
-
     $role_id = $this->session->userdata('role_id');
-
     $queryMenu = "SELECT `user_menu`.`id`, `menu`
                     FROM `user_menu` JOIN `user_access_menu`
                       ON `user_menu`.`id` = `user_access_menu`.`menu_id`
@@ -50,12 +44,9 @@
     <div class="sidebar-heading">
         <?= $m['menu'] ?>
     </div>
-
     <!-- SIAPKAN SUB-MENU SESUAI MENU -->
     <?php
-
         $menuId = $m['id'];
-
         $querySubMenu = "SELECT   *
                          FROM     `user_sub_menu`
                          WHERE    `menu_id` = $menuId
@@ -63,7 +54,6 @@
                        ";
         $subMenu = $this->db->query($querySubMenu)->result_array();
         ?>
-
     <?php foreach ($subMenu as $sm) : ?>
     <?php if ($judul == $sm['id']) : ?>
     <li class="nav-item active">
@@ -79,9 +69,7 @@
     <?php endforeach ?>
 
     <hr class="sidebar-divider">
-
     <?php endforeach; ?>
-
     <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
     </div>

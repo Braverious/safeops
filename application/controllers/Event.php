@@ -30,8 +30,6 @@ class Event extends CI_Controller
                 'jam_mulai' => $this->input->post('jam_mulai'),
                 'jam_selesai' => $this->input->post('jam_selesai')
             ]);
-
-            // Simpan data event dalam sesi
             $event_data = [
                 'nama_event' => $this->input->post('nama_event'),
                 'deskripsi' => $this->input->post('deskripsi'),
@@ -41,7 +39,6 @@ class Event extends CI_Controller
             ];
 
             $this->session->set_userdata('event_data', $event_data);
-
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Event Telah ditambahkan!</div>');
             redirect('event');
         }

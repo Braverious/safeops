@@ -56,8 +56,8 @@
     </div>
 
     <!-- Event -->
-    <div class="card mb-4 border border-dark" style="box-shadow: -5px 5px 5px 0px rgba(143,143,143,0.73);">
-        <div class="card-header" style="background-color: #2B1C2F; color: white;">
+    <div class="card mb-4 border border-dark" style="background-color: #2B1C2F;">
+        <div class="card-header" style="background-color: #ddd; color: white;">
             Event Hari Ini
         </div>
         <div class="card-body">
